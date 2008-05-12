@@ -1,0 +1,19 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2235
+
+The script opens the definition of functions and variables in the preview window on demand and provides operations to close the preview window, delete the buffer in the preview window and switch the buffer in the preview window to a new window. Quite simple, but useful.
+
+The script provides four commands:
+Pshow: open the definition of the current word in the preview window
+Pdelete: delete the buffer showing in the preview window
+PshowORdelete: if the cursor is in preview window, delete the current buffer (like Pdelete); Otherwise open the definition of current word in preview window
+Pswitch: if the preview window is open, close it and open the buffer in a new window 
+
+Vim also provides a "pclose" command to close the preview window, without deleting the buffer.
+
+If you want to open the tag preview immediately when you put cursor on a word, please uncomment the last line of the script. However, I found automatically preview is kind of boresome, so I do not provide a switch of auto-preview in the script.
+
+You can also refer to another tiny script autopreview at http://vim.sourceforge.net/scripts/script.php?script_id=2228.
+
+Related vim docs:
+:help ptag
+:help previewwindow
